@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brian Lucero - Financial Services Professional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+
+        @layer base {
+            body {
+                @apply bg-white text-gray-900 font-inter;
+            }
+        }
+
+        .nav-link {
+            @apply relative cursor-pointer text-lg font-light tracking-[2px] hover:text-gray-600 transition-colors;
+        }
+
+        .nav-link::after {
+            content: '';
+            @apply absolute left-0 -bottom-1 w-0 h-[1px] bg-gray-900 transition-all duration-300;
+        }
+
+        .nav-link:hover::after {
+            @apply w-full;
+        }
+
+
+
+        .line {
+            height: 2px; /* Set the height of the line */
+            background-color: #000; /* Set the color of the line */
+            margin: 50px 0; /* Add some space above and below the line */
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="min-h-screen max-w-5xl mx-auto px-4 py-12 md:py-20">
+        <header class="mb-20 flex justify-between items-center">
+            <div>
+                <h1 class="text-3xl md:text-4xl font-light mb-4">Brian Lucero</h1>
+                <p class="text-xl text-gray-600 tracking-wide">Financial Services Professional</p>
+            </div>
+            <a href="BrianLuceroResume.pdf" download class="bg-gray-500 text-white px-4 py-2 rounded-md hover:bg-gray-600 transition-colors">
+                Download Resume
+            </a>
+        </header>
+
+
+
+        <nav class="mb-16">
+            <ul class="flex space-x-8 justify-end">
+                <li>
+                    <a href="index.html" class="nav-link text-gray-900">About</a>
+                </li>
+                <li>
+                    <a href="experience.html" class="nav-link text-gray-400">Experience</a>
+                </li>
+                <li>
+                    <a href="education.html" class="nav-link text-gray-400">Education/Certification</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="nav-link text-gray-400">Contact</a>
+                </li>
+                <li>
+                    <a href="other information.html" class="nav-link text-gray-400">Other Information</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <div class="line"></div> <!-- Horizontal line -->
+
+
+
+        <main>
+            <div id="about" class="section active">
+                <div class="space-y-4">
+                    <h3 class="text-xl font-medium">About Me:</h3>
+                    <p class="text-lg font-light leading-relaxed">
+                        I am a highly motivated and results-oriented financial professional with a strong background in financial analysis and a commitment to contributing to a high-performing team. I possess a diverse skill set that encompasses financial analysis, client relationship management, risk management, and a constant dedication to continued growth in the financial industry. My goal is to leverage my skills and knowledge to make a significant contribution to a leading organization in the financial sector.
+                    </p>
+                    <h3 class="text-xl font-medium">Value Proposition:</h3>
+                    <p class="text-lg font-light leading-relaxed">
+                        I am a highly analytical and results-oriented financial professional with a strong commitment to delivering data-driven insights and strategic solutions. My expertise lies in my ability to provide comprehensive financial analysis, navigate complex investment markets, and develop effective risk management strategies. I am dedicated to contributing to the financial success of organizations by providing high-quality analyses, informed recommendations, and impactful results.
+                    </p>
+                    <h3 class="text-xl font-medium">Key Skills:</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Financial Planning</li>
+                            <li>Investment Markets</li>
+                            <li>Insurance Products</li>
+                            <li>Microsoft Excel</li>
+                            <li>Compliance</li>
+                        </ul>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Financial Analysis</li>
+                            <li>Risk Management</li>
+                            <li>Customer Service</li>
+                            <li>Sales</li>
+                            <li>Data Analysis</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
