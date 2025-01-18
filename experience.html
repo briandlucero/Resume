@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brian Lucero - Financial Services Professional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+
+        @layer base {
+            body {
+                @apply bg-white text-gray-900 font-inter;
+            }
+        }
+
+        .nav-link {
+            @apply relative cursor-pointer text-lg font-light tracking-[2px] hover:text-gray-600 transition-colors;
+        }
+
+        .nav-link::after {
+            content: '';
+            @apply absolute left-0 -bottom-1 w-0 h-[1px] bg-gray-900 transition-all duration-300;
+        }
+
+        .nav-link:hover::after {
+            @apply w-full;
+        }
+
+
+        .line {
+            height: 2px; /* Set the height of the line */
+            background-color: #000; /* Set the color of the line */
+            margin: 50px 0; /* Add some space above and below the line */
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="min-h-screen max-w-5xl mx-auto px-4 py-12 md:py-20">
+        <header class="mb-20 flex justify-between items-center">
+            <div>
+                <h1 class="text-3xl md:text-4xl font-light mb-4">Brian Lucero</h1>
+                <p class="text-xl text-gray-600 tracking-wide">Financial Services Professional</p>
+            </div>
+            <a href="BrianLuceroResume.pdf" download class="bg-gray-500 text-white px-4 py-2 rounded-md hover:bg-gray-600 transition-colors">
+                Download Resume
+            </a>
+        </header>
+
+
+
+        <nav class="mb-16">
+            <ul class="flex space-x-8 justify-end">
+                <li>
+                    <a href="index.html" class="nav-link text-gray-400">About</a>
+                </li>
+                <li>
+                    <a href="experience.html" class="nav-link text-gray-900">Experience</a>
+                </li>
+                <li>
+                    <a href="education.html" class="nav-link text-gray-400">Education/Certification</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="nav-link text-gray-400">Contact</a>
+                </li>
+                <li>
+                    <a href="other information.html" class="nav-link text-gray-400">Other Information</a>
+                </li>
+            </ul>
+        </nav>
+
+
+        <div class="line"></div> <!-- Horizontal line -->
+
+
+
+
+<!-- END OF HEADER -->
+
+
+
+        <main>
+            <div id="experience" class="section active">
+                <div class="space-y-4">
+                    <h3 class="text-xl font-medium">Career Highlights:</h3>
+                    <p class="text-lg font-light leading-relaxed">
+                        My professional career includes experience in diverse roles in the financial industry, starting from client-facing positions, and eventually specializing in financial operations and management. My experiences include working in the following positions:
+                    </p>
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="text-lg font-semibold">Pharmaid Drugstore Corporation, Valenzuela City, Philippines</h4>
+                            <p class="text-gray-700">Owner / Operations Manager (January 2022 – November 2023)</p>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold">Wells Fargo International Solutions LLC., Taguig City, Philippines</h4>
+                            <p class="text-gray-700">Securities Operations Service Specialist 3 (September 2020 – November 2021)</p>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold">Wells Fargo Bank N.A., California, United States</h4>
+                            <p class="text-gray-700">Personal Banker 2 – Registered (April 2017 – October 2019)</p>
+                            <p class="text-gray-700">Personal Banker (April 2016 – April 2017)</p>
+                            <p class="text-gray-700">Customer Sales and Service Representative (April 2015 – March 2016)</p>
+                        </div>
+                    </div>
+                    <p class="text-lg font-light leading-relaxed">
+                        Throughout my diverse professional career, I have consistently demonstrated a strong commitment to excellence and innovation across a variety of roles. As an Owner and Operations Manager at Pharmaid Drugstore, I managed all aspects of daily operations, driving increased sales revenue through the use of strategic initiatives, while also applying data-driven insights to make purchasing decisions, and always ensuring all business practices met regulatory standards. My expertise in finance was further developed during my time at Wells Fargo, where I began my journey as a Customer Sales and Service Representative, then advanced to a Personal Banker, and ultimately to a Personal Banker 2 - Registered, during which I developed expertise in client relationship management, and in providing financial advice. I provided clients with personalized recommendations to help them with their financial goals, and also developed strong client relationships by providing a consistently excellent level of customer service. I also worked as a Securities Operations Service Specialist at Wells Fargo International Solutions, further developing my skills in financial analysis, and enhancing my abilities to manage financial transactions and respond to complex inquiries, while upholding the highest operational standards. In all of my experiences, I have always taken key initiative to learn new skills, provide excellent service, and create innovative solutions that have helped me to meet, and exceed, all of my goals.
+                    </p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
